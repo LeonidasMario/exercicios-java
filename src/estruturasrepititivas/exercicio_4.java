@@ -3,7 +3,7 @@ package estruturasrepititivas;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicios_3 {
+public class exercicio_4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,21 +11,21 @@ public class exercicios_3 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int n;
-		Double a,b,c,md;
-		System.out.println("Digite o numero ");
-		n = sc.nextInt();
-		
-		for (int i = 0; i < n; i++) {
-			 
+		int N;
+		double a, b,div;
+		N = sc.nextInt();
+
+		for (int i = 0; i < N; i++) {
 			a = sc.nextDouble();
 			b = sc.nextDouble();
-			c = sc.nextDouble();
+			if( b==0) {
+				System.out.println("DIVISÃO IMPOSSIVEL");
+			}else {
+				div= a/b;
+				System.out.printf("%.1f\n",div);
+			}
 			
-			md = ((a*2.0)+ (b*3.0)+(c*5.0))/10;
-			System.out.printf("%.1f\n",md);
 		}
-		
-		
 	}
+
 }

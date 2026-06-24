@@ -3,29 +3,24 @@ package estruturasrepititivas;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicios_3 {
+public class exercio_5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Locale.setDefault(Locale.US);
+
 		Scanner sc = new Scanner(System.in);
 
-		int n;
-		Double a,b,c,md;
-		System.out.println("Digite o numero ");
-		n = sc.nextInt();
 		
+
+		int n = sc.nextInt();
+		int fat =1;
 		for (int i = 0; i < n; i++) {
-			 
-			a = sc.nextDouble();
-			b = sc.nextDouble();
-			c = sc.nextDouble();
-			
-			md = ((a*2.0)+ (b*3.0)+(c*5.0))/10;
-			System.out.printf("%.1f\n",md);
+         
+			fat = fat * i ;
 		}
-		
-		
+		System.out.println(fat);
 	}
+
 }
